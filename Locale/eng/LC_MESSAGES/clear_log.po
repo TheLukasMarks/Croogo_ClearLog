@@ -1,4 +1,4 @@
-# German translation of ClearLog Plugin
+# English translation of ClearLog Plugin
 #
 msgid ""
 msgstr ""
