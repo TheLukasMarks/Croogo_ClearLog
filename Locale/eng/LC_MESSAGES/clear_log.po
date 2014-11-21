@@ -1,0 +1,10 @@
+# German translation of ClearLog Plugin
+#
+msgid ""
+msgstr ""
+
+msgid "Clear Log"
+msgstr "Clear Log"
+
+msgid "Log files has been deleted successfully."
+msgstr "Log files has been deleted successfully."
