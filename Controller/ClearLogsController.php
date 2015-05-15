@@ -19,10 +19,6 @@ class ClearLogsController extends ClearLogsAppController {
 	public function admin_clear() {
 		$this->ClearLog->delete();
 		$this->Session->setFlash(__d('clear_log', 'Log files has been deleted successfully.'), 'flash', array('class' => 'success'));
-		$this->redirect(array(
-			'plugin' => 'settings',
-			'controller' => 'settings',
-			'action' => 'dashboard',
-		));
+		return $this->redirect(DS . 'admin');
 	}
 }
