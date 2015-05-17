@@ -1,6 +1,7 @@
 # ClearLog
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+[![Total Downloads](https://img.shields.io/packagist/dt/lumaxw3b/croogo_clearlog.svg?style=flat-square)](https://packagist.org/packages/lumaxw3b/croogo_clearlog)
 
 Croogo CMS ClearLog plugin for delete log files in the tmp/logs folder.
 
