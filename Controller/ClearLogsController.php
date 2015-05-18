@@ -19,6 +19,6 @@ class ClearLogsController extends ClearLogsAppController {
 	public function admin_clear() {
 		$this->ClearLog->delete();
 		$this->Session->setFlash(__d('clear_log', 'Log files has been deleted successfully.'), 'flash', array('class' => 'success'));
-		return $this->redirect(DS . 'admin');
+		return $this->redirect(Configure::read('Croogo.dashboardUrl'));
 	}
 }
