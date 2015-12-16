@@ -13,6 +13,7 @@
  */
 App::uses('AppModel', 'Model');
 
-class ClearLogAppModel extends AppModel {
+class ClearLogAppModel extends AppModel
+{
 
 }

@@ -13,6 +13,7 @@
  */
 App::uses('AppController', 'Controller');
 
-class ClearLogsAppController extends AppController {
+class ClearLogsAppController extends AppController
+{
 
 }

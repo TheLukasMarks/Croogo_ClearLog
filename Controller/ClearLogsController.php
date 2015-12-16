@@ -13,7 +13,8 @@
  */
 App::uses('ClearLogsAppController', 'ClearLog.Controller');
 
-class ClearLogsController extends ClearLogsAppController {
+class ClearLogsController extends ClearLogsAppController
+{
 	
 	/**
 	 * Models used by the Controller
@@ -21,7 +22,7 @@ class ClearLogsController extends ClearLogsAppController {
 	 * @var array
 	 * @access public
 	 */ 
-	public $uses = array('ClearLog.ClearLog');
+	public $uses = ['ClearLog.ClearLog'];
 	
 	/**
 	 * Admin clear
@@ -29,13 +30,14 @@ class ClearLogsController extends ClearLogsAppController {
 	 * @return void
 	 * @access public
 	 */
-	public function admin_clear() {
+	public function admin_clear()
+	{
 		if ($this->{$this->modelClass}->delete()) {
-			$this->Session->setFlash(__d('clear_log', 'Log files has been deleted successfully.'), 'flash', array('class' => 'success'));
+			$this->Session->setFlash(__d('clear_log', 'Log files has been deleted successfully.'), 'flash', ['class' => 'success']);
 			return $this->redirect(Configure::read('Croogo.dashboardUrl'));
 		}
 		
-		$this->Session->setFlash(__d('clear_log', 'An error occurred. Please, try again.'), 'flash', array('class' => 'error'));
+		$this->Session->setFlash(__d('clear_log', 'An error occurred. Please, try again.'), 'flash', ['class' => 'error']);
 		return $this->redirect(Configure::read('Croogo.dashboardUrl'));
 	}
 }

@@ -8,3 +8,6 @@ msgstr "Log leeren"
 
 msgid "Log files has been deleted successfully."
 msgstr "Die Log Dateien wurden erfolgreich gelöscht."
+
+msgid "An error occurred. Please, try again."
+msgstr "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
